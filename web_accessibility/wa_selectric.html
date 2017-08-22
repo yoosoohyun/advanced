@@ -5,9 +5,13 @@
   <title>인덱스 페이지 | All About Europe</title>
   <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+  <link rel="stylesheet" href="selectric.css" />
   <link rel="stylesheet" href="wa.css" />
+
   <script src="lib/jquery-3.2.1.min.js"></script>
-  <script src="wa.js"></script>
+  <script src="lib/jquery.selectric.js"></script>
+  <script src="wa_selectric.js"></script>
 </head>
 <body>
 
@@ -172,28 +176,15 @@
           <label for="family-site">연관사이트 바로가기</label>
         </h4>
 
-        <!--기본 셀렉트 박스-->
-        <div class="select-wrap">
-          <div class="select-box">
-            <select id="family-site" class="family-site-select">
+        <div class="select-view">
+          <select id="family-site" class="family-site-select">
               <option class="family-site-option">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</option>
               <option class="family-site-option">네이버</option>
               <option class="family-site-option">다음</option>
             </select>
-          </div>
         </div>
 
-        <!--버튼과 리스트를 사용해서 디자인된 셀렉트박스 구현-->
-        <div class="select-design">
-          <button type="button" class="select-design-button">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</button>
 
-          <ul class="select-design-list">
-            <li class="select-design-list-item"><button type="button" class="select-design-list-item-button">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</button> </li>
-            <li class="select-design-list-item"><button type="button" class="select-design-list-item-button">네이버</button> </li>
-            <li class="select-design-list-item"><button type="button" class="select-design-list-item-button">다음</button> </li>
-          </ul>
-
-        </div>
         <button type="button" class="btn family-site-move">이동</button>
       </article>
     </div>

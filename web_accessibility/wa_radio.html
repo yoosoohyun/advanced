@@ -29,12 +29,12 @@
     <nav class="gnb">
       <ul class="gnb-depth1">
         <li class="gnb-depth1-item">
-          <a class="gnb-depth1-link">HOME</a>
+          <a href="#" class="gnb-depth1-link">HOME</a>
 
         </li>
 
         <li class="gnb-depth1-item">
-          <a class="gnb-depth1-link">Land Mark</a>
+          <a href="#" class="gnb-depth1-link">Land Mark</a>
           <ul class="gnb-depth2">
             <li class="gnb-depth2-item">
               <a href="#" class="gnb-depth2-link">France</a>
@@ -52,7 +52,7 @@
         </li>
 
         <li class="gnb-depth1-item">
-          <a class="gnb-depth1-link">ABOUT</a>
+          <a href="#" class="gnb-depth1-link">ABOUT</a>
         </li>
       </ul>
     </nav>
@@ -169,30 +169,36 @@
 
       <article class="article family-site">
         <h4 class="article-heading family-site-heading">
-          <label for="family-site">연관사이트 바로가기</label>
+          연관사이트 바로가기
         </h4>
 
         <!--기본 셀렉트 박스-->
         <div class="select-wrap">
-          <div class="select-box">
-            <select id="family-site" class="family-site-select">
-              <option class="family-site-option">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</option>
-              <option class="family-site-option">네이버</option>
-              <option class="family-site-option">다음</option>
-            </select>
+
+        <!--리스트와 라디오로 디자인된 셀렉트박스 구현-->
+          <div class="select-design">
+
+            <button type="button" class="select-design-button" title="클릭하면 목록이 화면에 표시됩니다.">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</button>
+
+            <ul class="select-design-list">
+              <li class="select-design-list-item">
+                <input type="radio" id="select-radio-01" class="select-radio" name="family-site" />
+                <label class="select-radio-label" for="select-radio-01">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</label>
+              </li>
+
+              <li class="select-design-list-item">
+                <input type="radio" id="select-radio-02" class="select-radio" name="family-site" />
+                <label class="select-radio-label" for="select-radio-02">네이버</label>
+              </li>
+
+              <li class="select-design-list-item">
+                <input type="radio" id="select-radio-03" class="select-radio" name="family-site" />
+                <label class="select-radio-label" for="select-radio-03">다음</label>
+              </li>
+
+
+            </ul>
           </div>
-        </div>
-
-        <!--버튼과 리스트를 사용해서 디자인된 셀렉트박스 구현-->
-        <div class="select-design">
-          <button type="button" class="select-design-button">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</button>
-
-          <ul class="select-design-list">
-            <li class="select-design-list-item"><button type="button" class="select-design-list-item-button">이동할 사이트를 선택하고 이동버튼을 클릭해주세요.</button> </li>
-            <li class="select-design-list-item"><button type="button" class="select-design-list-item-button">네이버</button> </li>
-            <li class="select-design-list-item"><button type="button" class="select-design-list-item-button">다음</button> </li>
-          </ul>
-
         </div>
         <button type="button" class="btn family-site-move">이동</button>
       </article>
