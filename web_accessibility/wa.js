@@ -6,6 +6,8 @@
 
 $(function(){
 
+  var url;
+
   $('.gnb-depth1-link').on({
 
     'mouseenter' : function(){
@@ -21,7 +23,6 @@ $(function(){
     }
 
   });
-
 
 
 
@@ -65,6 +66,27 @@ $(function(){
     $('.select-design-list').removeClass('on');
     $('.select-design-button').data('open', 'false');
 
+  });
+
+
+  $('.select-radio-label').on('click', function(){
+
+    $('.select-design-button').text( $(this).text() );
+
+    $('.select-design-list').removeClass('on');
+    $('.select-design-button').data('open', 'false');
+
+    url = $(this).prev().data('url');
+
+  });
+
+  $('.family-site-move').on('click', function(){
+
+    //location 객체의 href 프로퍼티에 주소값을 넣어주면 해당 주소로 이동
+    //location.href = url;
+
+    //새창 열기
+    window.open(url);
 
   });
 });

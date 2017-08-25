@@ -433,7 +433,15 @@ a{
 
 .select-radio{
   position:absolute;
-  left:-99999%
+  left:-99999%;
+}
+
+
+
+.select-radio:focus + .select-radio-label{
+  background:#999;
+
+
 }
 
 .select-radio-label{
@@ -446,8 +454,12 @@ a{
   display:block;
   width:100%;
   text-align:left;
-
 }
+
+.select-radio-label:hover{
+  background:#999;
+}
+
 .family-site-select{
 
 }
